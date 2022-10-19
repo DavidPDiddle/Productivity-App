@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Productivity App (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Productivity App (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
