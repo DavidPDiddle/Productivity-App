@@ -13,19 +13,25 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
+// To learn more about WinUI, the WinUI project structure,
+// and more about our project templates, see: http://aka.ms/winui-project-info.
+
 namespace Productivity_App
 {
-    public sealed partial class MainWindow : Window
+    /// <summary>
+    /// An empty window that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class Calendar : Window
     {
-        public MainWindow()
+        public Calendar()
         {
             this.InitializeComponent();
         }
 
-        private void openCalendar(object sender, RoutedEventArgs e)
+        private void openMainWindow(object sender, RoutedEventArgs e)
         {
-            Calendar calendar = new Calendar();
-            calendar.Activate();
+            MainWindow main = new MainWindow();
+            main.Activate();
 
             this.Close();
         }
